@@ -1,25 +1,49 @@
 from django.shortcuts import render, get_object_or_404
+from django.views.generic.detail import DetailView
+from django.views.generic.edit import CreateView, UpdateView
 from django.views.generic.list import ListView
 # from django.http import Http404
 # Create your views here.
+
+from digitalmarket.mixins import MultiSlugMixin
 
 from .forms import ProductAddForm, ProductModelForm
 from .models import Product
 
 
+class ProductCreateView(CreateView):
+    model = Product
+    template_name = "form.html"
+    form_class = ProductModelForm
+    success_url = "/products/list/"
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(ProductCreateView, self).get_context_data(*args, **kwargs)
+        context["submit_btn"] = "Add Product"
+        return context
+
+
+class ProductUpdateView(UpdateView):
+    model = Product
+    template_name = "form.html"
+    form_class = ProductModelForm
+    success_url = "/products/list/"
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(ProductUpdateView, self).get_context_data(*args, **kwargs)
+        context["submit_btn"] = "Update Product"
+        return context
+
+
+class ProductDetailView(DetailView):
+    model = Product
+
+
 class ProductListView(ListView):
     model = Product
-    # template_name = 'list_view.html'
-
-    # def get_context_data(self, object_list=None, **kwargs):
-    #   context = super(ProductListView, self).get_context_data(**kwargs)
-    #   print(context)
-    #    context["queryset"] = self.get_queryset()
-    #    return context
 
     def get_queryset(self, *args, **kwargs):
         qs = super(ProductListView, self).get_queryset(**kwargs)
-        # qs = qs.filter(title__icontains="Product")
         return qs
 
 

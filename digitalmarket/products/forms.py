@@ -1,5 +1,6 @@
 from django import forms
 from .models import Product
+from django.utils.text import slugify
 
 PUBLISH_CHOICES = (
     ('publish', "Publish"),
@@ -49,3 +50,12 @@ class ProductModelForm(forms.ModelForm):
             "description",
             "price",
         ]
+
+    def clean(self, *args, **kwargs):
+        cleaned_data = super(ProductModelForm, self). clean(*args, **kwargs)
+        # title = cleaned_data.get("title")
+        # slug = slugify(title)
+        # qs = Product.objects.filter(slug=slug).exists()
+        # if qs:
+        #     raise forms.ValidationError("A new title is needed")
+        return cleaned_data
