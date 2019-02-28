@@ -2,37 +2,41 @@ from django.shortcuts import render, get_object_or_404
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView
 from django.views.generic.list import ListView
-# from django.http import Http404
+from django.http import Http404
+from django.urls import reverse
 # Create your views here.
 
-from digitalmarket.mixins import MultiSlugMixin
+from digitalmarket.mixins import MultiSlugMixin, SubmitBtnMixin, LoginRequiredMixin, StaffRequiredMixin
 
 from .forms import ProductAddForm, ProductModelForm
 from .models import Product
+from .mixins import ProductManagerMixin
 
 
-class ProductCreateView(CreateView):
+class ProductCreateView(LoginRequiredMixin, SubmitBtnMixin, CreateView):
+    model = Product
+    template_name = "form.html"
+    form_class = ProductModelForm
+    # success_url = "/products/list/"
+    submit_btn = "Add Product"
+
+    def form_valid(self, form):
+        user = self.request.user
+        form.instance.user = user
+        valid_data = super(ProductCreateView, self).form_valid(form)
+        form.instance.managers.add(user)
+        return valid_data
+
+    def get_success_url(self):
+        return reverse("product_list_view")
+
+
+class ProductUpdateView(ProductManagerMixin, SubmitBtnMixin, MultiSlugMixin, UpdateView):
     model = Product
     template_name = "form.html"
     form_class = ProductModelForm
     success_url = "/products/list/"
-
-    def get_context_data(self, *args, **kwargs):
-        context = super(ProductCreateView, self).get_context_data(*args, **kwargs)
-        context["submit_btn"] = "Add Product"
-        return context
-
-
-class ProductUpdateView(UpdateView):
-    model = Product
-    template_name = "form.html"
-    form_class = ProductModelForm
-    success_url = "/products/list/"
-
-    def get_context_data(self, *args, **kwargs):
-        context = super(ProductUpdateView, self).get_context_data(*args, **kwargs)
-        context["submit_btn"] = "Update Product"
-        return context
+    submit_btn = "UpdateProduct"
 
 
 class ProductDetailView(DetailView):

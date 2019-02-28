@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="048ca89a-6ffd-4499-87f1-3f3c21fa0fe2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/django_marketplace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django_marketplace.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/digitalmarket/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/digitalmarket/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digitalmarket/digitalmarket/mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/digitalmarket/digitalmarket/mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digitalmarket/digitalmarket/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/digitalmarket/digitalmarket/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digitalmarket/digitalmarket/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/digitalmarket/digitalmarket/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/digitalmarket/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/digitalmarket/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digitalmarket/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/digitalmarket/products/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,40 +23,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/digitalmarket/products/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" column="106" selection-start-line="15" selection-start-column="106" selection-end-line="15" selection-end-column="106" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/digitalmarket/templates/detail_view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="14" selection-end-line="8" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/digitalmarket/templates/products/product_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/digitalmarket/products/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+            <state relative-caret-position="510">
+              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -59,21 +35,57 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/digitalmarket/digitalmarket/mixins.py">
+        <entry file="file://$PROJECT_DIR$/digitalmarket/digitalmarket/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="221">
+              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/digitalmarket/digitalmarket/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
+              <folding>
+                <element signature="e#637#669#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/digitalmarket/products/mixins.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/digitalmarket/products/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="107" selection-start-line="10" selection-start-column="107" selection-end-line="10" selection-end-column="107" />
+            <state relative-caret-position="340">
+              <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
               <folding>
-                <element signature="e#0#4#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/digitalmarket/products/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="18" column="103" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="103" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,22 +149,23 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/digitalmarket/products/admin.py" />
         <option value="$PROJECT_DIR$/digitalmarket/templates/datail_view.html" />
-        <option value="$PROJECT_DIR$/digitalmarket/digitalmarket/settings.py" />
         <option value="$PROJECT_DIR$/digitalmarket/templates/base.html" />
         <option value="$PROJECT_DIR$/digitalmarket/templates/list_view.html" />
-        <option value="$PROJECT_DIR$/digitalmarket/digitalmarket/urls.py" />
         <option value="$PROJECT_DIR$/digitalmarket/templates/detail_view.html" />
         <option value="$PROJECT_DIR$/digitalmarket/templates/update_view.html" />
         <option value="$PROJECT_DIR$/digitalmarket/templates/create_view.html" />
         <option value="$PROJECT_DIR$/digitalmarket/templates/form.html" />
         <option value="$PROJECT_DIR$/digitalmarket/templates/products/product_list.html" />
         <option value="$PROJECT_DIR$/digitalmarket/templates/products/product_detail.html" />
-        <option value="$PROJECT_DIR$/digitalmarket/digitalmarket/mixins.py" />
         <option value="$PROJECT_DIR$/digitalmarket/templates/form_include.html" />
         <option value="$PROJECT_DIR$/digitalmarket/products/urls.py" />
-        <option value="$PROJECT_DIR$/digitalmarket/products/views.py" />
         <option value="$PROJECT_DIR$/digitalmarket/products/forms.py" />
+        <option value="$PROJECT_DIR$/digitalmarket/digitalmarket/mixins.py" />
+        <option value="$PROJECT_DIR$/digitalmarket/products/mixins.py" />
         <option value="$PROJECT_DIR$/digitalmarket/products/models.py" />
+        <option value="$PROJECT_DIR$/digitalmarket/products/views.py" />
+        <option value="$PROJECT_DIR$/digitalmarket/digitalmarket/settings.py" />
+        <option value="$PROJECT_DIR$/digitalmarket/digitalmarket/urls.py" />
       </list>
     </option>
   </component>
@@ -169,7 +182,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,6 +223,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,17 +265,22 @@
       <workItem from="1550086586477" duration="924000" />
       <workItem from="1550436248441" duration="7893000" />
       <workItem from="1550796920464" duration="1556000" />
+      <workItem from="1550880639414" duration="1131000" />
+      <workItem from="1550881790639" duration="1559000" />
+      <workItem from="1550883406592" duration="3012000" />
+      <workItem from="1551054030119" duration="28000" />
+      <workItem from="1551319075042" duration="15000" />
+      <workItem from="1551319135964" duration="915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43244000" />
+    <option name="totallyTimeSpent" value="49904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1294" height="1057" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20421393" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22366288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -275,14 +293,16 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.21536796" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5024311" side_tool="true" weight="0.21536796" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49756888" visible="true" weight="0.21536796" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32909605" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="R Graphics" order="5" />
+      <window_info anchor="right" id="R Packages" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,25 +317,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/digitalmarket/templates/datail_view.html" />
-    <entry file="file://$PROJECT_DIR$/digitalmarket/digitalmarket/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/digitalmarket/products/apps.py" />
     <entry file="file://$PROJECT_DIR$/digitalmarket/products/admin.py" />
-    <entry file="file://$PROJECT_DIR$/digitalmarket/digitalmarket/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding>
-            <element signature="e#637#669#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/django/views/generic/list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -350,16 +353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/digitalmarket/products/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="106" selection-start-line="15" selection-start-column="106" selection-end-line="15" selection-end-column="106" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/digitalmarket/templates/detail_view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -374,20 +367,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/digitalmarket/products/views.py">
+    <entry file="file://$PROJECT_DIR$/digitalmarket/digitalmarket/mixins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        <state relative-caret-position="204">
+          <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digitalmarket/products/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
           <folding>
-            <element signature="e#0#54#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/digitalmarket/digitalmarket/mixins.py">
+    <entry file="file://$PROJECT_DIR$/digitalmarket/products/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="340">
+          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digitalmarket/products/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="103" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="103" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -422,12 +435,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/digitalmarket/products/models.py">
+    <entry file="file://$PROJECT_DIR$/digitalmarket/products/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="107" selection-start-line="10" selection-start-column="107" selection-end-line="10" selection-end-column="107" />
+        <state relative-caret-position="510">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
           <folding>
-            <element signature="e#0#4#0" expanded="true" />
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digitalmarket/digitalmarket/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digitalmarket/digitalmarket/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
+          <folding>
+            <element signature="e#637#669#0" expanded="true" />
           </folding>
         </state>
       </provider>

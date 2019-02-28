@@ -2,6 +2,7 @@ from django.conf import settings
 from django.db import models
 from django.db.models.signals import pre_save, post_save
 from django.utils.text import slugify
+from django.urls import reverse
 
 # Create your models here.
 
@@ -18,6 +19,10 @@ class Product(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        view_name = "product_detail_slug_view"
+        return reverse(view_name, kwargs={"slug": self.slug})
 
 
 def create_slug(instance, new_slug=None):
