@@ -6,17 +6,13 @@ from .views import ProductListView, ProductDetailView, ProductCreateView, Produc
 app_name = 'products'
 
 urlpatterns = [
-    # path('detail/', views.detail_view, name='detail'),
     path('create/', views.create_view, name='create_view'),
-    # path('list/', views.list_view, name='list_view'),
-    path('list/', ProductListView.as_view(), name='product_list_view'),
-    path('add/', ProductCreateView.as_view(), name='product_create_view'),
-    re_path(r'^detail/(?P<object_id>\d+)/$', views.detail_view, name='detail_view'),
-    # re_path(r'^detail/(?P<object_id>\d+)/edit/$', views.update_view, name='update_view'),
-    re_path(r'^product/(?P<slug>[\w-]+)/edit/$', ProductUpdateView.as_view(), name='product_update_view'),
-    re_path(r'^slug/(?P<slug>[\w-]+)/$', views.detail_slug_view, name='detail_slug_view'),
+    path('', ProductListView.as_view(), name='list'),
+    path('add/', ProductCreateView.as_view(), name='create'),
+    re_path(r'^detail/(?P<object_id>\d+)/$', views.detail_view, name='detail'),
+    re_path(r'^product/(?P<slug>[\w-]+)/edit/$', ProductUpdateView.as_view(), name='update'),
+    re_path(r'^slug/(?P<slug>[\w-]+)/$', views.detail_slug_view, name='detail_slug'),
     re_path(r'^product/(?P<pk>\d+)/$', ProductDetailView.as_view(), name='product_detail_view'),
-    re_path(r'^product/(?P<slug>[\w-]+)/$', ProductDetailView.as_view(), name='product_detail_slug_view'),
-    # re_path(r'^list/$', views.list_view, name='list_view'),
+    re_path(r'^product/(?P<slug>[\w-]+)/$', ProductDetailView.as_view(), name='detail_slug'),
 
 ]
