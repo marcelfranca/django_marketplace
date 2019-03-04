@@ -4,6 +4,7 @@ from django.views.generic.edit import CreateView, UpdateView
 from django.views.generic.list import ListView
 from django.http import Http404
 from django.urls import reverse
+from django.db.models import Q
 # Create your views here.
 
 from digitalmarket.mixins import MultiSlugMixin, SubmitBtnMixin, LoginRequiredMixin, StaffRequiredMixin
@@ -48,6 +49,10 @@ class ProductListView(ListView):
 
     def get_queryset(self, *args, **kwargs):
         qs = super(ProductListView, self).get_queryset(**kwargs)
+        query = self.request.GET.get("q")
+        qs = qs.filter(Q(title__icontains=query) |
+                       Q(description__icontains=query)
+                       ).order_by("title")
         return qs
 
 
