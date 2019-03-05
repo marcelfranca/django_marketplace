@@ -1,13 +1,22 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+<style>
+.main-content {
+    width: 800px;
+    margin: 0
+    }
+</style>
 </head>
 <body>
+
+<div class="main-content">
 {% block content %}
-
+<p>Product</p>
 {% endblock content %}
-
+</div>
 </body>
 </html>

@@ -1,22 +1,24 @@
 {% extends "base.html" %}
 
-{% block content %}
 
-    <h1>Products</h1>
+{% block content %}
+    <h1>Products {{ abc }}</h1>
     <p>
     <form method="GET" action="">
     <input type="text" name="q" placeholder="Search" value="{{ request.GET.q }}">
     <input type="submit" value="Search">
-    </p>
     </form>
+     </p>
     <ul>
     {% for instance in object_list %}
-        <li>{{ instance }} - {{ instance.description }} - {{ instance.price }}</li>
+        <li>
+            <a href="{{ instance.get_absolute_url }}">{{ instance }}</a><br/>
+            {{ instance.description|truncatechars:10 }}<br/>
+            {{ instance.price }}</li>
     {% empty %}
         <li>No products yet</li>
     {% endfor %}
     </ul>
-
 
 
 {% endblock %}
